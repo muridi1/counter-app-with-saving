@@ -23,12 +23,13 @@ export default function WorkedEX(): JSX.Element {
   return (
     <>
       <h1>Emoji Picker</h1>
-      <p>
+      {/* <p>
         Previous Emojis:
         {previousEmoji.slice(-5).map((emojiArr, index) => (
           <li key={index}>{emojiArr}</li>
         ))}
-      </p>
+      </p> */}
+      <p>Previuos Emoji: {previousEmoji.slice(-1)}</p>
       <p>Chosen Emoji: {currentEmoji}</p>
       <div onClick={handleStorePrevious}>
         <button onClick={handleSmileyEmoji}>😀</button>
